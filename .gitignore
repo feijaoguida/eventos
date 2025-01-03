@@ -99,3 +99,7 @@
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
 /apps/backend/report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+
+# Main Workspace
+/node_modules
