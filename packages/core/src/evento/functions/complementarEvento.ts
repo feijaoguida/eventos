@@ -1,7 +1,6 @@
-import { error } from "console";
 import Evento from "../model/Evento";
 import validarEvento from "./validarEvento";
-import { Id, Senha } from "@/core/shared";
+import { Id, Senha } from "../../shared";
 
 export default function complementarEvento(
   eventoParcial: Partial<Evento>
