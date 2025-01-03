@@ -1,41 +1,101 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-/frontend/node_modules
-/frontend/.pnp
-/frontend/.pnp.*
-/frontend/.yarn/*
-/frontend/!.yarn/patches
-/frontend/!.yarn/plugins
-/frontend/!.yarn/releases
-/frontend/!.yarn/versions
+/apps/frontend/.env
+/apps/frontend/node_modules
+/apps/frontend/.pnp
+/apps/frontend/.pnp.*
+/apps/frontend/.yarn/*
+/apps/frontend/!.yarn/patches
+/apps/frontend/!.yarn/plugins
+/apps/frontend/!.yarn/releases
+/apps/frontend/!.yarn/versions
 
 # testing
-/frontend/coverage
+/apps/frontend/coverage
 
 # next.js
 /.next/
 /out/
 
 # production
-/frontend/build
+/apps/frontend/build
 
 # misc
 .DS_Store
 *.pem
 
 # debug
-/frontend/npm-debug.log*
-/frontend/yarn-debug.log*
-/frontend/yarn-error.log*
-/frontend/.pnpm-debug.log*
+/apps/frontend/npm-debug.log*
+/apps/frontend/yarn-debug.log*
+/apps/frontend/yarn-error.log*
+/apps/frontend/.pnpm-debug.log*
 
 # env files (can opt-in for committing if needed)
-/frontend/.env*
+/apps/frontend/.env*
 
 # vercel
-/frontend/.vercel
+/apps/frontend/.vercel
 
 # typescript
-*.tsbuildinfo
-next-env.d.ts
+/apps/frontend/*.tsbuildinfo
+/apps/frontend/next-env.d.ts
+
+#BACKEND
+
+# compiled output
+/apps/backend/dist
+/apps/backend/node_modules
+/apps/backend/build
+
+# Logs
+/apps/backend/logs
+/apps/backend/*.log
+/apps/backend/npm-debug.log*
+/apps/backend/pnpm-debug.log*
+/apps/backend/yarn-debug.log*
+/apps/backend/yarn-error.log*
+/apps/backend/lerna-debug.log*
+
+# OS
+/apps/backend/.DS_Store
+
+# Tests
+/apps/backend/coverage
+/apps/backend/.nyc_output
+
+# IDEs and editors
+/apps/backend/.idea
+/apps/backend/.project
+/apps/backend/.classpath
+/apps/backend/.c9/
+/apps/backend/*.launch
+/apps/backend/.settings/
+/apps/backend/*.sublime-workspace
+
+# IDE - VSCode
+/apps/backend/.vscode/*
+/apps/backend/!.vscode/settings.json
+/apps/backend/!.vscode/tasks.json
+/apps/backend/!.vscode/launch.json
+/apps/backend/!.vscode/extensions.json
+
+# dotenv environment variable files
+/apps/backend/.env
+/apps/backend/.env.development.local
+/apps/backend/.env.test.local
+/apps/backend/.env.production.local
+/apps/backend/.env.local
+
+# temp directory
+/apps/backend/.temp
+/apps/backend/.tmp
+
+# Runtime data
+/apps/backend/pids
+/apps/backend/*.pid
+/apps/backend/*.seed
+/apps/backend/*.pid.lock
+
+# Diagnostic reports (https://nodejs.org/api/report.html)
+/apps/backend/report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
