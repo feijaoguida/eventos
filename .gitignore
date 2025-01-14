@@ -103,3 +103,20 @@
 
 # Main Workspace
 /node_modules
+
+#MOBILE
+
+# compiled output
+/apps/mobile/dist
+/apps/mobile/node_modules
+/apps/mobile/build
+
+# dotenv environment variable files
+/apps/mobile/.env
+/apps/mobile/.env.development.local
+/apps/mobile/.env.test.local
+/apps/mobile/.env.production.local
+/apps/mobile/.env.local
+
+#packages/core/node_modules
+/packages/core/node_modules/
