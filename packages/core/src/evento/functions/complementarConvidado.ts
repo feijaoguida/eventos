@@ -19,7 +19,7 @@ export default function complementarConvidado(
   const convidadoAtualizado = {
     ...convidado,
     qtdeAcompanhantes: temAcompanhantes ? temAcompanhantes : 0,
-    possueAcompanhates: temAcompanhantes,
+    possuiAcompanhantes: temAcompanhantes,
   };
 
   return convidadoAtualizado as Convidado;

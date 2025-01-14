@@ -33,7 +33,7 @@ declare const eventos: Evento[];
 
 declare class Id {
     static novo(): string;
-    private static hash;
+    static valido(id: string): boolean;
 }
 
 declare class Alias {
@@ -44,4 +44,9 @@ declare class Senha {
     static nova(tamanho?: number): string;
 }
 
-export { Alias, type Convidado, type Evento, Id, Senha, complementarConvidado, complementarEvento, criarConvidadoVazio, criarEventoVazio, eventos };
+declare class Data {
+    static formatar(data: Date): string;
+    static desformatar(data: string): Date;
+}
+
+export { Alias, type Convidado, Data, type Evento, Id, Senha, complementarConvidado, complementarEvento, criarConvidadoVazio, criarEventoVazio, eventos };

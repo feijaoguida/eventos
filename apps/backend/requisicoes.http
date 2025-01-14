@@ -1,0 +1,71 @@
+GET http://localhost:4000/ping
+
+### Eventos
+GET  http://localhost:4000/eventos
+
+###
+GET  http://localhost:4000/eventos/aniversario-joao
+
+###
+GET  http://localhost:4000/eventos/5e25282b-cde5-45ff-9436-c4320d7c2f6f
+
+### Validar Alias
+GET  http://localhost:4000/eventos/validar/evento-fullstack/21ff36d7-8fa7-495e-9339-d1687458b660
+
+### Validar usuário e senha
+POST http://localhost:4000/eventos/acessar
+Content-Type: application/json
+
+{
+  "id": "21ff36d7-8fa7-495e-9339-d1687458b660",
+  "senha": "senha123"
+}
+
+
+### Validar usuário e senha com senha invalida
+POST http://localhost:4000/eventos/acessar
+Content-Type: application/json
+
+{
+  "id": "21ff36d7-8fa7-495e-9339-d1687458b660",
+  "senha": "senha1232"
+}
+
+
+### Cadastrar Convidado
+POST http://localhost:4000/eventos/aniversario-joao/convidado
+Content-Type: application/json
+
+{
+    "id": "f7f5279c-e271-49e8-b2d413f3044e",
+    "nome": "João da Silva",
+    "email": "joaodasilva@email.com",
+    "confirmado": true,
+    "possuiAcompanhantes": true,
+    "qtdeAcompanhantes": 50
+}
+
+### Cadastrar Evento
+POST http://localhost:4000/eventos/
+Content-Type: application/json
+
+{
+  "alias": "semana-fullstack1",
+  "nome": "Semana Fullstack1",
+  "data": "2020-01-01T23:00",
+  "local": "São Paulo",
+  "descricao": "Semana de lançamento do Fullstack",
+  "senha": "senha123",
+  "imagem": "https://www.formacao.dev/assets/img/formacao-dev.png",
+  "imagemBackground": "https://www.formacao.dev/assets/img/formacao-dev.png",
+  "publicoEsperado": 1000,
+  "convidados": [
+    {
+    "nome": "João da Silva",
+    "email": "joaodasilva@email.com",
+    "confirmado": true,
+    "possuiAcompanhantes": true,
+    "qtdeAcompanhantes": 50
+    }
+  ]
+}
